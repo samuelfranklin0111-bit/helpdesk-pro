@@ -1,0 +1,24 @@
+{
+  "name": "helpdesk-pro",
+  "version": "0.1.0",
+  "description": "Sistema web de gerenciamento de chamados de suporte técnico",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node src/backend/server.js",
+    "seed": "node src/backend/database/seed.js",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
+  }
+}
